@@ -4,4 +4,3 @@ FROM node
 
 RUN npm install -g clever-tools
 COPY restart.sh /root/restart.sh
-CMD /root/restart.sh
