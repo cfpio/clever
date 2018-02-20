@@ -5,9 +5,9 @@ SECRET=${2:-$CC_SECRET}
 APP=${3:-$CC_APPLICATION}
 
 mkdir -p ~/.config/
-echo '{"token":"'$1'","secret":"'$2'"}' > ~/.config/clever-cloud
+echo '{"token":"'$TOKEN'","secret":"'$SECRET'"}' > ~/.config/clever-cloud
 
-clever link -a app $3
+clever link -a app $APP
 
 clever restart --without-cache
 
