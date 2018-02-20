@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TOKEN=$1
-SECRET=$2
-APP=$3
+TOKEN=${1:-$CC_TOKEN}
+SECRET=${2:-$CC_SECRET}
+APP=${3:-$CC_APPLICATION}
 
 mkdir -p ~/.config/
 echo '{"token":"'$1'","secret":"'$2'"}' > ~/.config/clever-cloud
